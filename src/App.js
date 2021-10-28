@@ -1,11 +1,12 @@
-import './App.css';
+import SwNav from './components/Nav';
 
 function App() {
-  return (
-    <div className="App">
-
-    </div>
-  );
+  const routes = [
+    { name: 'Home', toUrl: '/' },
+    { name: 'People', toUrl: '/people' },
+    { name: 'Starships', toUrl: '/starships' },
+  ];
+  return <SwNav items={routes}></SwNav>;
 }
 
 export default App;
